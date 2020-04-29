@@ -17,6 +17,9 @@ import Page404 from "../pages/auth/Page404";
 import Page500 from "../pages/auth/Page500";
 
 
+import CaseFolders from "../pages/casefolders";
+
+
 // Dashboards
 const Default = async(() => import("../pages/dashboards/Default"));
 
@@ -120,7 +123,18 @@ const dashboardRoutes = {
   name: "Dashboard",
   icon: SlidersIcon,
   component: Default,
-  children: null
+  children: [
+    {
+      path: "/",
+      name: "Dashboard",
+      component: Default
+    },
+    {
+      path: "/case-folders",
+      name: "Case Folders",
+      component: CaseFolders
+    }
+  ]
 };
 
 
