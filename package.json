@@ -66,6 +66,7 @@
     "react-select": "3.0.8",
     "react-transition-group": "4.3.0",
     "reactstrap": "8.2.0",
+    "reactstrap-date-picker": "0.0.7",
     "redux": "4.0.4",
     "smartwizard": "4.3.1"
   },

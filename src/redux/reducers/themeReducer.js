@@ -2,13 +2,13 @@ import * as types from "../constants";
 
 const themes = {
   classic: {
-    primary: "#47bac1",
-    secondary: "#a180da",
-    tertiary: "#5fc27e",
-    success: "#5fc27e",
-    info: "#5b7dff",
-    warning: "#fcc100",
-    danger: "#f44455"
+    primary: "#3A89FF",
+    secondary: "#495057",
+    tertiary: "#0069fc",
+    success: "#4bbf73",
+    info: "#1f9bcf",
+    warning: "#f0ad4e",
+    danger: "#d9534f"
   },
   corporate: {
     primary: "#3A89FF",

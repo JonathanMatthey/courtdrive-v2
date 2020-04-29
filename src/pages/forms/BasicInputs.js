@@ -51,7 +51,7 @@ const Checkboxes = () => (
         <Label check>
           <Input type="checkbox" /> Option one is this and that—be sure to
           include why it's great
-        </Label>
+        </Laonel>
       </FormGroup>
       <FormGroup check className="mb-2">
         <Label check>

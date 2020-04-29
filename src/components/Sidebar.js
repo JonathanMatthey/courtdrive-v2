@@ -5,7 +5,7 @@ import { NavLink, withRouter } from "react-router-dom";
 import { Badge, Collapse } from "reactstrap";
 import PerfectScrollbar from "react-perfect-scrollbar";
 
-import { Box } from "react-feather";
+import { Database } from "react-feather";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
@@ -40,7 +40,7 @@ const SidebarCategory = withRouter(
           aria-expanded={isOpen ? "true" : "false"}
         >
           <Icon size={18} className="align-middle mr-3" />
-          <span className="align-middle">{name}</span>
+          <span className="align-middle sidebar-item-text">{name}</span>
           {badgeColor && badgeText ? (
             <Badge color={badgeColor} size={18} className="sidebar-badge">
               {badgeText}
@@ -130,7 +130,7 @@ class Sidebar extends React.Component {
         <div className="sidebar-content">
           <PerfectScrollbar>
             <a className="sidebar-brand" href="/">
-              <Box className="align-middle text-primary" size={24} />{" "}
+              <Database className="align-middle text-primary" size={24} />{" "}
               <span className="align-middle sidebar-item-text">CourtDrive</span>
             </a>
 

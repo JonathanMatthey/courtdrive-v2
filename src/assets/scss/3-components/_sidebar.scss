@@ -203,6 +203,11 @@ a.sidebar-link {
     .sidebar-content {
       left: 0;
     }
+
+    [data-toggle="collapse"]:before {
+      display: none;
+    }
+
   }
 
   // Workaround for IE bug, more info:

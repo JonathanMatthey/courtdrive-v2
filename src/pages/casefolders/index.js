@@ -16,6 +16,7 @@ import { Home, Settings, MessageSquare } from "react-feather";
 
 import MyCaseFolders from "./tables/MyCaseFolders";
 import FirmCaseFolders from "./tables/FirmCaseFolders";
+import CustomView from "./tables/CustomView";
 
 class TabsWithTextLabel extends React.Component {
   constructor(props) {
@@ -108,6 +109,9 @@ class TabsWithTextLabel extends React.Component {
           </TabPane>
           <TabPane tabId="4">
             <FirmCaseFolders/>
+          </TabPane>
+          <TabPane tabId="6">
+            <CustomView/>
           </TabPane>
         </TabContent>
       </div>
