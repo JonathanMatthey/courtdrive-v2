@@ -48,6 +48,9 @@ a.sidebar-link {
   text-decoration: none;
   cursor: pointer;
 
+  transition: $sidebar-transition;
+  
+
   i,
   svg {
     margin-right: .75rem;
@@ -150,6 +153,8 @@ a.sidebar-link {
   color: $sidebar-brand-color;
   display: block;
 
+  transition: $sidebar-transition;
+
   &:hover {
     text-decoration: none;
     color: $sidebar-brand-color;
@@ -178,10 +183,25 @@ a.sidebar-link {
 
 .sidebar {
   &.toggled {
-    margin-left: -$sidebar-width;
+    margin-left: 0;
+    max-width: $sidebar-width-collapsed;
+    min-width: $sidebar-width-collapsed;
+
+    .sidebar-brand {
+      padding: $sidebar-brand-padding-y $sidebar-brand-padding-x-collapsed;
+    }
+
+    .sidebar-item-text{
+      display: none;
+    }
+
+    .sidebar-link,
+    a.sidebar-link {
+      padding: $sidebar-link-padding-collapsed;
+    }
 
     .sidebar-content {
-      left: -$sidebar-width;
+      left: 0;
     }
   }
 
@@ -218,7 +238,7 @@ a.sidebar-link {
         margin-left: -$sidebar-width;
 
         .sidebar-content {
-          left: -$sidebar-width;
+          left: -$sidebar-width + 50;
         }
       }
     }

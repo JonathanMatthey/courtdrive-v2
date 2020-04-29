@@ -25,13 +25,84 @@ const filingsRoutes = {
   name: "Filings",
   icon: FileTextIcon,
   component: Default,
-  children: null
+  children: [
+    {
+      path: "/filings/case-lookup",
+      name: "Case Lookup",
+      component: Default
+    },
+    {
+      path: "/filings/pacer-search",
+      name: "PACER Search",
+      component: Default
+    },
+    {
+      path: "/filings/3",
+      name: "Reports",
+      component: Default
+    },
+    {
+      path: "/filings/4",
+      name: "Business BK Filings",
+      component: Default
+    }
+  ]
 };
 
 const advancedSearchRoutes = {
   path: "/search",
   name: "Advanced Search",
   icon: SearchIcon,
+  component: Default,
+  children: [
+    {
+      path: "/search/all-courts",
+      name: "All Courts",
+      component: Default
+    },
+    {
+      path: "/search/bankruptcy",
+      name: "Bankruptcy",
+      component: Default
+    },
+    {
+      path: "/search/civil",
+      name: "Civil",
+      component: Default
+    },
+    {
+      path: "/search/criminal",
+      name: "Criminal",
+      component: Default
+    },
+    {
+      path: "/search/appellate",
+      name: "Appellate",
+      component: Default
+    }
+  ]
+};
+
+const dailyDigestRoutes = {
+  path: "/dailyDigest",
+  name: "DailyDigest",
+  icon: GitPullRequestIcon,
+  component: Default,
+  children: null
+};
+
+const customViewRoutes = {
+  path: "/customView",
+  name: "CustomView",
+  icon: GitPullRequestIcon,
+  component: Default,
+  children: null
+};
+
+const ECFEmailsRoutes = {
+  path: "/ecf-emails",
+  name: "ECF Emails",
+  icon: GitPullRequestIcon,
   component: Default,
   children: null
 };
@@ -51,6 +122,24 @@ const dashboardRoutes = {
   component: Default,
   children: null
 };
+
+
+const recentRoutes = {
+  path: "/recent",
+  name: "Recent",
+  header: "Helpful links",
+  badgeColor: "primary",
+  badgeText: "5",
+  icon: SlidersIcon,
+  containsHome: true,
+  children: [
+    {
+      path: "/dashboard/default",
+      name: "Default",
+      component: Default
+    }
+  ]
+}
 
 
 const authRoutes = {
@@ -95,8 +184,11 @@ export const dashboard = [
   dashboardRoutes,
   filingsRoutes,
   advancedSearchRoutes,
-  integrationsRoutes,
-  authRoutes
+  authRoutes,
+  dailyDigestRoutes,
+  customViewRoutes,
+  ECFEmailsRoutes,
+  integrationsRoutes
 ];
 
 
@@ -108,5 +200,8 @@ export default [
   dashboardRoutes,
   filingsRoutes,
   advancedSearchRoutes,
+  dailyDigestRoutes,
+  customViewRoutes,
+  ECFEmailsRoutes,
   integrationsRoutes
 ];

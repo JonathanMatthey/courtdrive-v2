@@ -67,7 +67,7 @@ const SidebarItem = withRouter(
       <li className={"sidebar-item " + getSidebarItemClass(to)}>
         <NavLink to={to} className="sidebar-link" activeClassName="active">
           {Icon ? <Icon size={18} className="align-middle mr-3" /> : null}
-          {name}
+          <span className="sidebar-item-text">{name}</span>
           {badgeColor && badgeText ? (
             <Badge color={badgeColor} size={18} className="sidebar-badge">
               {badgeText}
@@ -131,7 +131,7 @@ class Sidebar extends React.Component {
           <PerfectScrollbar>
             <a className="sidebar-brand" href="/">
               <Box className="align-middle text-primary" size={24} />{" "}
-              <span className="align-middle">CourtDrive</span>
+              <span className="align-middle sidebar-item-text">CourtDrive</span>
             </a>
 
             <ul className="sidebar-nav">

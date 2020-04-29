@@ -213,6 +213,7 @@ const NavbarComponent = ({ dispatch }) => {
                 Profile
               </DropdownItem>
               <DropdownItem divider />
+              <DropdownItem>Settings</DropdownItem>
               <DropdownItem>Help</DropdownItem>
               <DropdownItem>Sign out</DropdownItem>
             </DropdownMenu>
