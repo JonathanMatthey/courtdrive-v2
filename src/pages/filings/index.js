@@ -15,6 +15,7 @@ import {
 import { Home, Settings, MessageSquare } from "react-feather";
 
 import CaseLookup from "./forms/CaseLookup";
+import PacerSearch from "./forms/PacerSearch";
 
 class TabsWithTextLabel extends React.Component {
   constructor(props) {
@@ -85,6 +86,13 @@ class TabsWithTextLabel extends React.Component {
           <TabPane tabId="1">
             <CaseLookup/>
           </TabPane>
+          <TabPane tabId="2">
+            <PacerSearch/>
+          </TabPane>
+          <TabPane tabId="3">
+          </TabPane>
+          <TabPane tabId="4">
+          </TabPane>
         </TabContent>
       </div>
     );
@@ -94,9 +102,10 @@ class TabsWithTextLabel extends React.Component {
 
 const Filings = () => (
   <Container fluid className="p-0">
-    <h1 className="h3 mb-3">Filings</h1>
+    <h1 className="h3 mb-3">Search Court Records</h1>
+    <p>Access bankruptcy, civil, and criminal cases across all districts nationwide</p>
     <Row>
-      <Col lg="8">
+      <Col lg="10">
         <TabsWithTextLabel name="Default" />
       </Col>
     </Row>
