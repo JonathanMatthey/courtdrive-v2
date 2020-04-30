@@ -4,9 +4,9 @@ import { Button, Row, Col, Media, Input, Card, CardBody, CardHeader, CardTitle, 
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory from "react-bootstrap-table2-paginator";
 
-import { tableData, tableColumns } from "./data.js";
+import { tableData, tableColumns } from "./archivedData.js";
 
-const MyCaseFolders = () => {
+const Archived = () => {
   const selectRow = {
     mode: "checkbox",
     clickToSelect: true,
@@ -59,4 +59,4 @@ const MyCaseFolders = () => {
   );
 };
 
-export default MyCaseFolders;
+export default Archived;

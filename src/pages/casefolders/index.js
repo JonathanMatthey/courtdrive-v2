@@ -15,8 +15,11 @@ import {
 import { Home, Settings, MessageSquare } from "react-feather";
 
 import MyCaseFolders from "./tables/MyCaseFolders";
+import Archived from "./tables/Archived";
 import FirmCaseFolders from "./tables/FirmCaseFolders";
 import CustomView from "./tables/CustomView";
+import DailyDigest from "./tables/DailyDigest";
+import FirmDigest from "./tables/FirmDigest";
 
 class TabsWithTextLabel extends React.Component {
   constructor(props) {
@@ -107,8 +110,17 @@ class TabsWithTextLabel extends React.Component {
           <TabPane tabId="1">
             <MyCaseFolders/>
           </TabPane>
+          <TabPane tabId="2">
+            <DailyDigest/>
+          </TabPane>
+          <TabPane tabId="3">
+            <Archived/>
+          </TabPane>
           <TabPane tabId="4">
             <FirmCaseFolders/>
+          </TabPane>
+          <TabPane tabId="5">
+            <FirmDigest/>
           </TabPane>
           <TabPane tabId="6">
             <CustomView/>
@@ -123,7 +135,6 @@ class TabsWithTextLabel extends React.Component {
 const Tabs = () => (
   <Container fluid className="p-0">
     <h1 className="h3 mb-3">CaseFolders</h1>
-
     <Row>
       <Col lg="12">
         <TabsWithTextLabel name="Default" />
