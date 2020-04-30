@@ -18,6 +18,7 @@ import Page500 from "../pages/auth/Page500";
 
 
 import CaseFolders from "../pages/casefolders";
+import Filings from "../pages/filings";
 
 
 // Dashboards
@@ -27,27 +28,27 @@ const filingsRoutes = {
   path: "/filings",
   name: "Filings",
   icon: FileTextIcon,
-  component: Default,
+  component: Filings,
   children: [
     {
       path: "/filings/case-lookup",
       name: "Case Lookup",
-      component: Default
+      component: Filings
     },
     {
       path: "/filings/pacer-search",
       name: "PACER Search",
-      component: Default
+      component: Filings
     },
     {
       path: "/filings/3",
       name: "Reports",
-      component: Default
+      component: Filings
     },
     {
       path: "/filings/4",
       name: "Business BK Filings",
-      component: Default
+      component: Filings
     }
   ]
 };
