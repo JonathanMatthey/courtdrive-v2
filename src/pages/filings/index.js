@@ -9,7 +9,12 @@ import {
   NavLink,
   Row,
   TabContent,
-  TabPane
+  TabPane,
+  Card,
+  CardHeader,
+  ListGroupItem,
+  ListGroup,
+  CardTitle
 } from "reactstrap";
 
 import { Home, Settings, MessageSquare } from "react-feather";
@@ -105,8 +110,28 @@ const Filings = () => (
     <h1 className="h3 mb-3">Search Court Records</h1>
     <p>Access bankruptcy, civil, and criminal cases across all districts nationwide</p>
     <Row>
-      <Col lg="10">
+      <Col lg="8">
         <TabsWithTextLabel name="Default" />
+      </Col>
+      <Col lg="4">
+        <Card>
+          <CardHeader>
+            <CardTitle tag="h5" className="mb-0">
+              Recent Cases
+            </CardTitle>
+          </CardHeader>
+          <ListGroup flush>
+            <ListGroupItem><a>Lehman Brothers Holdings Inc.</a></ListGroupItem>
+            <ListGroupItem><a>Frontier Communications Corporatio...</a></ListGroupItem>
+            <ListGroupItem><a>Annie M. Griffin</a></ListGroupItem>
+            <ListGroupItem><a>Anthony Lee Brinneman</a></ListGroupItem>
+            <ListGroupItem><a>Alan D. Caporali and Joy L. Capora...</a></ListGroupItem>
+            <ListGroupItem><a>COMMONWEALTH OF PUERTO RICO and PU...</a></ListGroupItem>
+            <ListGroupItem><a>Riverbend Environmental Services, ...</a></ListGroupItem>
+            <ListGroupItem><a>Federal-Mogul Global, Inc.,</a></ListGroupItem>
+            <ListGroupItem><a>Jasvir Mand and Rajinder Kaur Rand...</a></ListGroupItem>
+          </ListGroup>
+        </Card>
       </Col>
     </Row>
   </Container>

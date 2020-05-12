@@ -19,6 +19,7 @@ import Page500 from "../pages/auth/Page500";
 
 import CaseFolders from "../pages/casefolders";
 import Filings from "../pages/filings";
+import AdvancedSearch from "../pages/advanced-search";
 
 
 // Dashboards
@@ -57,32 +58,32 @@ const advancedSearchRoutes = {
   path: "/search",
   name: "Advanced Search",
   icon: SearchIcon,
-  component: Default,
+  component: AdvancedSearch,
   children: [
     {
       path: "/search/all-courts",
       name: "All Courts",
-      component: Default
+      component: AdvancedSearch
     },
     {
       path: "/search/bankruptcy",
       name: "Bankruptcy",
-      component: Default
+      component: AdvancedSearch
     },
     {
       path: "/search/civil",
       name: "Civil",
-      component: Default
+      component: AdvancedSearch
     },
     {
       path: "/search/criminal",
       name: "Criminal",
-      component: Default
+      component: AdvancedSearch
     },
     {
       path: "/search/appellate",
       name: "Appellate",
-      component: Default
+      component: AdvancedSearch
     }
   ]
 };
